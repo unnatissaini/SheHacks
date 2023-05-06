@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("");
+    background-size: contain;
+    margin: 0;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    /* flex: 1; */
+}
+
+.container.nav{
+    color: white;
+    background-color: rgba(175, 150, 243, 0.9);
+}
+  
+.row{
+  border-radius: 10px;
+    transition: box-shadow 0.3s ease-in-out; /* Add a transition effect for smooth hover */
+  
+    /* Set the default box-shadow */
+    margin-left: 30px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    width: 150%;
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 50px;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(175, 150, 243, 0.8);
+
+}
+.row:hover {
+    /* Set the hover box-shadow */
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+  }
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.down{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+   background-color: white;
+}
+a{
+    color: black;
+    text-decoration:none;
+}
+.navbar-brand {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-toggle {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin-right: 20px;
+  }
+  
+  .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #fff;
+    margin-bottom: 4px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .navbar-header {
+      display: flex;
+      align-items: center;
+      flex: 1;
+    }
+  
+    .navbar-collapse {
+      display: flex !important;
+      justify-content: flex-end;
+      flex: 2;
+    }
+  
+    .navbar-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex: 1;
+    }
+  
+    .navbar-nav > li {
+      margin-right: 20px;
+    }
+  }
+  
